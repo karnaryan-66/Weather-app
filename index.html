@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2 class="logo">🌦 SkyCast</h2>
+      <p class="tagline">Modern Weather Dashboard</p>
+
+      <div class="search-area">
+        <input type="text" id="cityInput" placeholder="Search city..." />
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <div class="recent">
+        <h3>Recent Searches</h3>
+        <ul id="recentList">
+          <li>Kathmandu</li>
+          <li>Delhi</li>
+          <li>Tokyo</li>
+        </ul>
+      </div>
+
+      <p class="footer-text">Made by Aryan karn 🚀</p>
+    </div>
+
+
+    <!-- Main Weather Display -->
+    <div class="main">
+
+      <div class="top-bar">
+        <h1 id="cityName">Search a City</h1>
+        <p id="dateTime">---</p>
+      </div>
+
+      <div class="weather-display hidden" id="weatherDisplay">
+
+        <div class="temp-section">
+          <img id="weatherIcon" src="" alt="weather icon" />
+          <h2 id="temperature">--°C</h2>
+          <p id="condition">---</p>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <h4>Feels Like</h4>
+            <p id="feelsLike">--°C</p>
+          </div>
+
+          <div class="card">
+            <h4>Humidity</h4>
+            <p id="humidity">--%</p>
+          </div>
+
+          <div class="card">
+            <h4>Wind Speed</h4>
+            <p id="wind">-- m/s</p>
+          </div>
+
+          <div class="card">
+            <h4>Pressure</h4>
+            <p id="pressure">-- hPa</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Loading -->
+      <div class="loader hidden" id="loader"></div>
+
+      <!-- Error -->
+      <p class="error hidden" id="errorMsg">City not found ❌</p>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
