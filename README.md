@@ -25,7 +25,7 @@ It fetches live weather data using the **OpenWeather API**.
 
 ## 📸 Screenshot
 ![SkyCast Screenshot](Mainscreen.png)
-[SkyCast Screenshot](weatherupdate.png)
+![SkyCast Screenshot](weatherupdate.png)
 
 
 ---
